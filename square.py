@@ -1,7 +1,14 @@
-# Square Number Calculator
+ # square.py
 
-number = int(input("Enter a number: "))
+def square(number):
+    return number * number
 
-square = number * number
 
-print("The square of", number, "is", square)
+def main():
+    number = int(input("Enter a number: "))
+    result = square(number)
+    print("The square of", number, "is", result)
+
+
+if __name__ == "__main__":
+    main()
