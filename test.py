@@ -1,6 +1,13 @@
-def square(number):
-    return number * number
+from square import square
 
-if __name__ == "__main__":
-    num = int(input("Enter a number: "))
-    print("The square of", num, "is", square(num))
+def test_square_positive():
+    assert square(5) == 25
+
+def test_square_zero():
+    assert square(0) == 0
+
+def test_square_negative():
+    assert square(-4) == 16
+
+def test_square_large():
+    assert square(12) == 144
